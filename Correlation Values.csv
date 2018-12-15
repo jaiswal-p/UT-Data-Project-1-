@@ -1,0 +1,6 @@
+,DataValue,AdultObeisty rate,High School Obesity Rate,Per Capita Alcohol consumption,Percentage of Smoker
+DataValue,1,0.566523129,0.56967507,-0.256753624,0.539956944
+AdultObeisty rate,0.566523129,1,0.661010032,-0.262613493,0.814703946
+High School Obesity Rate,0.56967507,0.661010032,1,-0.322937402,0.551538074
+Per Capita Alcohol consumption,-0.256753624,-0.262613493,-0.322937402,1,-0.021730153
+Percentage of Smoker,0.539956944,0.814703946,0.551538074,-0.021730153,1
