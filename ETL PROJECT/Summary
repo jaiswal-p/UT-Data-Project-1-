@@ -1,0 +1,39 @@
+Why do we care about suicide? This has to be the most depressing dataset to examine. According to Institute for Health Metrics and Evaluation, Global Burden of Disease 2010, the 
+suicide became the leading cause of death in 2010 for people ages 15-49 in the developed world in 2010. More recently, there has been more of a shift towards prevention.
+
+We chose the two datasets because one gave the increases in population and the numer of sicides and the country gdp. This sets up a 
+database for suicide, population, and gdp by country.
+
+Need help? In the U.S. call 1-800-273-8255 for the National Suicide Prevention Lifeline.
+
+We took to sources:
+ https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-2016
+ https://catalog.data.gov/dataset/population-by-country-1980-2010
+
+ The kaggle file already had combined more information about the countries and the suicide rates there from sources:
+    United Nations Development Program. (2018). Human development index (HDI). Retrieved from http://hdr.undp.org/en/indicators/137506
+    World Bank. (2018). World development indicators: GDP (current US$) by country:1985 to 2016. Retrieved from http://databank.worldbank.org/data/source/world-development-indicators#
+    [Szamil]. (2017). Suicide in the Twenty-First Century [dataset]. Retrieved from https://www.kaggle.com/szamil/suicide-in-the-twenty-first-century/notebook
+    World Health Organization. (2018). Suicide prevention. Retrieved from http://www.who.int/mental_health/suicide-prevention/en/ 
+ 
+World population data. 
+We extracted the population data from the csv file to pandas dataframe. We transformed the 
+world population data by renaming columns. We cleaned by dropping NAs and --, which had been replaced by NA.
+
+We created a mysql database with the population table. We connected to the mysql database using the mysql.db.
+
+Out of the data, we selected a ten years for this specific database.
+We created a country code based on the first three characters of the country name.
+We renamed the columns to match the database columns.
+
+Suicide data.
+We extracted the suicide data from the csv file to pandas dataframe. We transformed the 
+world suicide data by renaming columns. We cleaned by dropping NAs and --, which had been replaced by NA.
+
+We created a mysql database with the suicide table. We connected to the mysql database using the mysql.db.
+
+Out of the data, we selected a ten years for this specific database.
+We created a country code based on the first three characters of the country name.
+We renamed the columns to match the database columns.
+
+We populated the data in the database in the additional suicide table. It is now ready for JOINS or aggregations.
